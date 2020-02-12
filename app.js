@@ -10,6 +10,7 @@ var myMovies = {
     
 };
 
+// localstorage
 if(localStorage.getItem("myMovies")) {
     myMovies = JSON.parse(localStorage.getItem("myMovies"));
     updateMovieHistory();
