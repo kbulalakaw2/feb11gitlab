@@ -36,10 +36,13 @@ function updateMovieHistory(movie) {
             <th style='width: 400px;'>Title</th>
             <th style='width: 400px; text-align: right;'>Watched</th>
         </tr>
-        ${
+        ${  // map method here
             Object.keys(myMovies).map(function (key) {
                 return `<tr><td>${key}</td><td style='text-align: right;'>${myMovies[key]}</td></tr>`           
                 }).join("")
+                // The map method here takes each item in the array myMovies and returns an array modified
+                // with the following function. In this case, each object in myMovies creates a table row,
+                // where one cell is created for the object key and another for the object value. 
         }
     </table>
     `;
